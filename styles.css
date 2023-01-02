@@ -6,17 +6,6 @@
     padding: 0;
   }
 
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  section {
-    padding: 10rem 0 7rem;
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-
   nav {
     display: flex;
     width: 100%;
@@ -37,6 +26,7 @@
     width: 100vw;
     z-index: 2;
     margin-top: 10px;
+    color: rgb(81, 80, 80);
     font-family: "Lato", sans-serif;
   }
 
@@ -60,6 +50,10 @@
     color: rgb(61, 60, 60);
   }
 
+  .see-program a {
+    color: #fff;
+  }
+
   .top-bar ul a {
     text-decoration: none;
     color: #fff;
@@ -75,6 +69,7 @@
     position: fixed;
     z-index: 2;
     top: 30px;
+    background-color: #fff;
     border-bottom: 3px solid rgb(249, 246, 246);
   }
 
@@ -122,5 +117,210 @@
     border: 5px solid rgb(237, 76, 18);
     padding: 10px;
     color: rgb(237, 76, 18);
+  }
+
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    padding-top: 160px;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-image: url(./images/bg.webp);
+    background-size: cover;
+    height: 100vh;
+    color: rgb(81, 80, 80);
+  }
+
+  .container {
+    width: 80%;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container h2 {
+    font-size: 2rem;
+    color: rgb(237, 76, 18);
+  }
+
+  .container h1 {
+    font-size: 3rem;
+    color: rgb(237, 76, 18);
+  }
+
+  .container p {
+    padding: 1.4rem 3.4rem;
+    font-size: 1rem;
+    display: block;
+    margin: 2rem;
+    border: 2px solid #fff;
+    width: 690px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .container h3 {
+    font-size: 2rem;
+  }
+
+  .main {
+    background: url(./images/bgtexture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  .main-program {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-program h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .line {
+    width: 50px;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    background-color: rgb(237, 76, 18);
+  }
+
+  .program-cards {
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  .card {
+    background-color: #19181a;
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+  }
+
+  .card span .uil {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+
+  .card h3 {
+    color: rgb(237, 76, 18);
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .see-program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .speakers {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 640px;
+  }
+
+  .feature h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .divider {
+    width: 50px;
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 76, 18);
+  }
+
+  .speaker {
+    width: 80%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .persons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+  }
+
+  .persons img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .right-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -20px;
+    width: 300px;
+  }
+
+  .right-desc h3 {
+    font-size: 1.3rem;
+    color: hsl(270, 1%, 33%);
+    font-family: 'Lato', sans-serif;
+  }
+
+  .right-desc h4 {
+    font-size: 0.9rem;
+    color: hsl(9, 84%, 50%);
+    font-family: 'Lato', sans-serif;
+  }
+
+  .right-desc p {
+    font-size: 0.9rem;
+    color: hsl(270, 1%, 33%);
+    font-family: 'Lato', sans-serif;
+  }
+
+  .speakers::-webkit-scrollbar {
+    display: none;
   }
 }
