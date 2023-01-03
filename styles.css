@@ -43,6 +43,7 @@
     justify-content: center;
     gap: 15px;
     padding-right: 200px;
+    font-family: 'Lato', sans-serif;
   }
 
   .logo a {
@@ -161,11 +162,13 @@
   .container h2 {
     font-size: 2rem;
     color: rgb(237, 76, 18);
+    font-family: 'Lato', sans-serif;
   }
 
   .container h1 {
     font-size: 3rem;
     color: rgb(237, 76, 18);
+    font-family: 'Lato', sans-serif;
   }
 
   .container p {
@@ -180,6 +183,11 @@
 
   .container h3 {
     font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .container h4 {
+    font-family: 'Lato', sans-serif;
   }
 
   .main {
@@ -240,6 +248,7 @@
   .card h3 {
     color: rgb(237, 76, 18);
     font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
   }
 
   .card p {
@@ -255,6 +264,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 70px;
+    font-family: 'Lato', sans-serif;
   }
 
   .speakers {
@@ -361,6 +371,7 @@
     position: absolute;
     margin-left: 640px;
     color: hsl(270, 1%, 64%);
+    font-family: 'Lato', sans-serif;
   }
 
   .partner-divider {
@@ -508,6 +519,11 @@
     align-items: center;
     justify-content: center;
     margin-left: 110px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .main-page h3 {
+    display: none;
   }
 
   .underline {
@@ -534,6 +550,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Lato', sans-serif;
   }
 
   .next-page {
@@ -763,6 +780,17 @@
     font-family: 'Lato', sans-serif;
   }
 
+  .main-page a {
+    text-decoration: underline;
+    color: #19181a;
+    font-size: 1rem;
+    line-height: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 220px;
+  }
+
   .mobile-nav a:nth-child(6) {
     color: #ed4c12;
     background-color: #fff;
@@ -801,7 +829,7 @@
     font-family: 'Lato', sans-serif;
     background-color: #faf6f6;
     color: #515050;
-    width: 500px;
+    width: 450px;
   }
 
   .landing h3 {
@@ -980,5 +1008,65 @@
 
   footer {
     display: none;
+  }
+
+  .main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    padding-top: 100px;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-image: url(./images/bg.webp);
+    background-size: cover;
+    height: 100vh;
+    color: #515050;
+  }
+
+  .main-page h3 {
+    width: 100vw;
+    color: #ed4c12;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin-left: 80px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .main-page h2 {
+    width: 100vw;
+    color: #ed4c12;
+    font-size: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .main-page p {
+    margin-left: 30px;
+    background-color: #fff;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #515050;
+    line-height: 24px;
+    width: 550px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .main-page h4 {
+    color: #515050;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Lato', sans-serif;
+    margin-left: 100px;
   }
 }
