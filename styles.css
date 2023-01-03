@@ -342,6 +342,10 @@
     display: none;
   }
 
+  .more {
+    display: none;
+  }
+
   .partner {
     width: 100vw;
     height: 250px;
@@ -678,30 +682,79 @@
   }
 
   .header {
-    z-index: 2;
+    height: 2.5rem;
+    width: 100vw;
     position: fixed;
-    min-height: 1rem;
-    min-width: 100%;
-    top: 0;
-    background-color: #515050;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    padding-left: 20px;
   }
 
   .logo {
     display: none;
   }
 
-  .menu-links ul {
-    position: fixed;
-    top: 0;
-    flex-direction: column;
-    z-index: 3;
-    width: 12rem;
-    height: 100vh;
-    background: #fff;
-    box-shadow: 1rem 0 2rem #515050;
-    list-style: none;
+  .menu-links {
     display: none;
+  }
+
+  .humburger {
+    position: relative;
+    display: block;
+    width: 50px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .humburger .bar,
+  .humburger::after,
+  .humburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(56, 55, 55);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .humburger.is-active::before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .humburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .humburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    top: 3rem;
+    left: 100%;
+    width: 60%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: wheat;
+    padding-top: 100px;
+    transition: all 500ms ease;
+  }
+
+  .mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    background-color: rgb(50, 50, 47);
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
   }
 
   .see-program a {
@@ -710,35 +763,14 @@
     font-family: 'Lato', sans-serif;
   }
 
-  .menu-links ul a {
-    text-decoration: none;
-    width: 100%;
-    justify-content: start;
-    padding-left: 2rem;
+  .mobile-nav a:nth-child(6) {
+    color: #ed4c12;
+    background-color: #fff;
+    border: 5px solid #ed4c12;
   }
 
-  .menu-links ul a li {
-    height: 4.6rem;
-    width: 100%;
-  }
-
-  .menu-links ul a li:hover {
-    padding-left: 3rem;
-    transition: all 800ms ease;
-  }
-
-  button {
-    display: inline-block;
-    justify-content: end;
-    cursor: pointer;
-    background: transparent;
-    color: #19181a;
-    margin-left: 5rem;
-    border: none;
-  }
-
-  button#close-btn {
-    display: none;
+  .mobile-nav.is-active {
+    left: 0;
   }
 
   .landing {
@@ -747,7 +779,6 @@
     background-image: url(./images/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 2rem;
     padding: 3rem 3rem;
   }
 
@@ -870,6 +901,77 @@
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
+  }
+
+  .feature {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .divider {
+    background-color: #ed4c12;
+    width: 50px;
+    height: 1px;
+    margin-left: 50px;
+  }
+
+  .speaker {
+    width: 80%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .persons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .persons img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .persons:nth-child(3) {
+    display: none;
+  }
+
+  .persons:nth-child(4) {
+    display: none;
+  }
+
+  .persons:nth-child(5) {
+    display: none;
+  }
+
+  .persons:nth-child(6) {
+    display: none;
+  }
+
+  .more {
+    border: 1px solid #515050;
+    border-radius: 3px;
+    background-color: #f7f4f4;
+    color: #515050;
+    margin-top: 2rem;
+    height: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .more h3 {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .more h3 .uil {
+    font-size: 2rem;
+    color: #ed4c12;
   }
 
   .partner {
