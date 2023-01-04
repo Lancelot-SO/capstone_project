@@ -81,42 +81,48 @@
     color: #fff;
   }
 
-  .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    z-index: 2;
-    top: 30px;
-    background-color: #fff;
-    border-bottom: 3px solid rgb(249, 246, 246);
-  }
-
-  .logo {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-    padding-left: 200px;
-    font-family: "Lato", sans-serif;
-  }
-
-  .logo img {
-    width: 50px;
-    height: 50px;
-  }
-
   .menu-links {
-    padding-right: 200px;
-    font-family: "Lato", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    top: 30px;
+    height: 100%;
+    width: 100vw;
+    z-index: 2;
+    margin-top: 10px;
+    color: #faf7f7;
+    font-family: "Lato", sans-serif;
+  }
+
+  .persons img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo-about img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .img-container img {
+    width: 300px;
+    height: 250px;
+    margin-left: 300px;
+  }
+
+  .logo2 a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu-links ul a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mobile-nav {
+    display: none;
   }
 
   .menu-links a:hover {
@@ -127,14 +133,42 @@
     display: flex;
     list-style: none;
     flex-direction: row;
-    gap: 70px;
+    gap: 45px;
     align-items: center;
+    width: 80%;
   }
 
-  .menu-link:nth-child(6) li {
+  .menu-link:nth-child(1) {
+    margin-top: 10px;
+    margin-right: 400px;
+  }
+
+  .menu-link:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .menu-link:nth-child(3) {
+    margin-top: 10px;
+  }
+
+  .menu-link:nth-child(4) {
+    margin-top: 10px;
+  }
+
+  .menu-link:nth-child(5) {
+    margin-top: 10px;
+  }
+
+  .menu-link:nth-child(6) {
+    margin-top: 10px;
+  }
+
+  .menu-link:nth-child(7) li {
     border: 5px solid rgb(237, 76, 18);
     padding: 10px;
     color: rgb(237, 76, 18);
+    flex-wrap: wrap;
+    margin-top: 10px;
   }
 
   .landing {
@@ -194,7 +228,7 @@
     background: url(./images/bgtexture.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     overflow-x: hidden;
     width: 100vw;
     border-top: 1px solid #dddbdb;
@@ -209,7 +243,7 @@
 
   .main-program h2 {
     font-size: 2rem;
-    color: black;
+    color: #fff;
     font-family: 'Lato', sans-serif;
   }
 
@@ -358,7 +392,8 @@
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .feature {
@@ -401,12 +436,6 @@
     flex-direction: row;
     gap: 30px;
     margin-left: 200px;
-    margin-bottom: 20px;
-  }
-
-  .persons img {
-    width: 150px;
-    height: 150px;
   }
 
   .right-desc {
@@ -547,22 +576,6 @@
   .logo2 {
     width: 200px;
     height: 120px;
-  }
-
-  .logo-about img {
-    width: 100px;
-    height: 50px;
-  }
-
-  .img-container img {
-    width: 300px;
-    height: 250px;
-    margin-left: 300px;
-  }
-
-  .logo2 a img {
-    width: 50px;
-    height: 50px;
   }
 
   .logo2 h5 {
@@ -829,16 +842,24 @@
     transition: 0.4s;
   }
 
-  .humburger.is-active::before {
+  .humburger.active::before {
     transform: rotate(-45deg) translate(-9px, 6px);
   }
 
-  .humburger.is-active::after {
+  .humburger.active::after {
     transform: rotate(45deg) translate(-9px, -8px);
   }
 
-  .humburger.is-active .bar {
+  .humburger.active .bar {
     opacity: 0;
+  }
+
+  .header.active {
+    left: 0;
+  }
+
+  .mobile-nav.active {
+    left: 0;
   }
 
   .mobile-nav {
