@@ -197,6 +197,7 @@
     height: 80vh;
     overflow-x: hidden;
     width: 100vw;
+    border-top: 1px solid #dddbdb;
   }
 
   .main-program {
@@ -208,7 +209,7 @@
 
   .main-program h2 {
     font-size: 2rem;
-    color: #fff;
+    color: black;
     font-family: 'Lato', sans-serif;
   }
 
@@ -220,6 +221,92 @@
     justify-content: center;
     margin-left: 80px;
     background-color: rgb(237, 76, 18);
+  }
+
+  .main3 {
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    overflow-x: hidden;
+    width: 100vw;
+    border-top: 1px solid #dddbdb;
+  }
+
+  .main-program3 {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-program3 h2 {
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .linear3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 1px;
+    background-color: #ed4c12;
+    margin-left: 200px;
+  }
+
+  .img-cont3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-container3 {
+    padding-top: 20px;
+    position: relative;
+    margin-top: 80px;
+    background: linear-gradient(to top, #fd5b04ba, #fa5407cc), url(./images/summit.jpeg) no-repeat;
+    background-size: 300px;
+    margin-left: 400px;
+    width: 300px;
+    height: 190px;
+  }
+
+  .summit-text3 {
+    position: absolute;
+    color: #fff;
+    margin-left: 30px;
+    bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .summit-text3 h2 {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  .img-contain3 {
+    padding-top: 20px;
+    position: relative;
+    margin-top: 80px;
+    background: linear-gradient(to top, #fd5b04ba, #fa5407cc), url(./images/summit.jpeg) no-repeat;
+    background-size: 300px;
+    margin-left: 1px;
+    width: 300px;
+    height: 190px;
+  }
+
+  .summit-content3 {
+    position: absolute;
+    color: #fff;
+    margin-left: 30px;
+    bottom: 100px;
+    margin-top: 200px;
+  }
+
+  .summit-content3 h2 {
+    margin-left: 100px;
+    margin-top: 100px;
   }
 
   .program-cards {
@@ -445,6 +532,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #313030;
   }
 
   .footer-logo {
@@ -480,7 +568,7 @@
   .logo2 h5 {
     font-size: 14px;
     font-family: 'Lato', sans-serif;
-    color: black;
+    color: hsl(270, 1%, 64%);
   }
 
   .rights h5 {
@@ -620,7 +708,7 @@
   }
 
   .main h4 {
-    color: #fff;
+    color: #504e4e;
     margin-left: -55px;
   }
 
@@ -632,10 +720,10 @@
   .img-container {
     padding-top: 20px;
     position: relative;
-    margin-top: 130px;
+    margin-top: 80px;
     background: linear-gradient(to top, #fd5b04ba, #fa5407cc), url(./images/summit.jpeg) no-repeat;
     background-size: 300px;
-    margin-left: 350px;
+    margin-left: 400px;
     width: 300px;
     height: 190px;
   }
@@ -656,7 +744,7 @@
   .img-contain {
     padding-top: 20px;
     position: relative;
-    margin-top: 130px;
+    margin-top: 80px;
     background: linear-gradient(to top, #fd5b04ba, #fa5407cc), url(./images/summit.jpeg) no-repeat;
     background-size: 300px;
     margin-left: 1px;
@@ -855,9 +943,10 @@
   }
 
   .main {
-    background-color: #19181a;
+    background: #313030;
+    width: 116%;
     padding-bottom: 30px;
-    width: 100vw;
+    border-top: 1px solid #cbc9c9;
   }
 
   .main::-webkit-scrollbar {
@@ -867,8 +956,8 @@
   .main-program {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .main-program h2 {
@@ -876,21 +965,112 @@
     padding-top: 2rem;
     font-family: 'Lato', sans-serif;
     color: #fff;
+    margin-left: 300px;
   }
 
   .line {
     background-color: #ed4c12;
     width: 50px;
     height: 1px;
+    margin-left: 350px;
   }
 
   .program-cards {
-    width: 80%;
     margin-top: 60px;
     padding-left: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 600px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .main3 {
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    overflow-x: hidden;
+    width: 100vw;
+    border-top: 1px solid #dddbdb;
+  }
+
+  .main-program3 {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-program3 h2 {
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    margin-left: 25px;
+  }
+
+  .linear3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 1px;
+    background-color: #ed4c12;
+    margin-left: 200px;
+  }
+
+  .img-cont3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-container3 {
+    padding-top: 20px;
+    position: relative;
+    margin-top: 80px;
+    background: linear-gradient(to top, #fd5b04ba, #fa5407cc), url(./images/summit.jpeg) no-repeat;
+    background-size: 300px;
+    margin-left: 50px;
+    width: 300px;
+    height: 190px;
+  }
+
+  .summit-text3 {
+    position: absolute;
+    color: #fff;
+    margin-left: 30px;
+    bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .summit-text3 h2 {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  .img-contain3 {
+    padding-top: 20px;
+    position: relative;
+    margin-top: 80px;
+    background: linear-gradient(to top, #fd5b04ba, #fa5407cc), url(./images/summit.jpeg) no-repeat;
+    background-size: 300px;
+    margin-left: 1px;
+    width: 300px;
+    height: 190px;
+  }
+
+  .summit-content3 {
+    position: absolute;
+    color: #fff;
+    margin-left: 30px;
+    bottom: 100px;
+    margin-top: 200px;
+  }
+
+  .summit-content3 h2 {
+    margin-left: 100px;
+    margin-top: 100px;
   }
 
   .card {
@@ -1146,7 +1326,7 @@
   }
 
   .main-program h4 {
-    color: #fff;
+    color: rgb(129, 125, 125);
     margin-left: -40px;
   }
 
@@ -1292,6 +1472,10 @@
   }
 
   footer {
+    display: none;
+  }
+
+  .footer {
     width: 100vw;
     height: 200px;
     display: flex;

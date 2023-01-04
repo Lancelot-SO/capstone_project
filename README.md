@@ -57,7 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Finishing Mobile Version Portfolio] <a name="about-project"></a>
+# 📖 [Finishing Capstone Project] <a name="about-project"></a>
 
 > Capstone Project
 
@@ -159,7 +159,7 @@ Example:
 
 <!-- AUTHORS -->
 
-👤 **Author**
+👤 **Cindy Shin**
 
 - Github: [@githubhandle](https://github.com/Lancelot-SO)
 - Twitter: [@twitterhandle](https://twitter.com/Lancelot)
