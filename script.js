@@ -1,10 +1,23 @@
-const menubtn = document.querySelector('.humburger');
-const mobilemenu = document.querySelector('.mobile-nav');
+const hamburger = document.querySelector('.humburger');
+const navMenu = document.querySelector('.mobile-nav');
+const nav = document.querySelector('.header');
 
-menubtn.addEventListener('click', () => {
-  menubtn.classList.toggle('is-active');
-  mobilemenu.classList.toggle('is-active');
-});
+function mobileMenu() {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  nav.classList.toggle('active');
+}
+hamburger.addEventListener('click', mobileMenu);
+
+const naviLink = document.querySelectorAll('.navLink');
+
+function closeMenu() {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+  nav.classList.remove('active');
+}
+
+naviLink.forEach((n) => n.addEventListener('click', closeMenu));
 
 const guestData = [{
   imageSrc: './images/10.jpeg',
