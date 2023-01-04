@@ -159,7 +159,7 @@ Example:
 
 <!-- AUTHORS -->
 
-👤 **Cindy Shin**
+👤 **Felix Adjei Sowah**
 
 - Github: [@githubhandle](https://github.com/Lancelot-SO)
 - Twitter: [@twitterhandle](https://twitter.com/Lancelot)
@@ -193,7 +193,7 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="Cindy Shin"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
