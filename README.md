@@ -193,7 +193,7 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="Cindy Shin"></a>
+## 🙏 Acknowledgments <a name="Thanks a lot to Cindy Shin](https://www.behance.net/adagio07), the author of the original design for being the inspiration behing the design/website"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

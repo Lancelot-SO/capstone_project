@@ -178,7 +178,6 @@
     justify-content: flex-start;
     width: 100vw;
     padding-top: 160px;
-    overflow-x: hidden;
     background-repeat: no-repeat;
     background-image: url(./images/bg.webp);
     background-size: cover;
@@ -229,7 +228,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    overflow-x: hidden;
     width: 100vw;
     border-top: 1px solid #dddbdb;
   }
@@ -389,7 +387,6 @@
   .speakers {
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -473,7 +470,6 @@
   .partner {
     width: 100vw;
     height: 250px;
-    overflow-x: hidden;
     background-color: hsl(270, 2%, 19%);
   }
 
@@ -503,16 +499,18 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 80%;
-    margin-left: 170px;
+    width: 80vw;
   }
 
   .partners ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 60px;
+    padding-top: 100px;
+    margin-left: 150px;
   }
 
   .partner ul li:nth-child(1) {
@@ -963,7 +961,7 @@
 
   .main {
     background: #313030;
-    width: 116%;
+    width: 100vw;
     padding-bottom: 30px;
     border-top: 1px solid #cbc9c9;
   }
@@ -1000,7 +998,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 600px;
+    width: 80%;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -1196,7 +1194,7 @@
     height: 40px;
     padding-bottom: 30px;
     margin-bottom: 20px;
-    width: 600px;
+    width: 80vw;
   }
 
   .more h3 {
